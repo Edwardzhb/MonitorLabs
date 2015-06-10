@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+  <title>CUI Example</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <script src='./js/cui-vendor.min.js'></script>
+  <script src='./js/cui.min.js'></script>
+
+  <link rel="stylesheet" href="./css/cui.min.css">
+</head>
+<body ng-controller='AppController'>
+<cui-application-frame application-name='Sitraka' navigation-items='applicationframe.navigation' masthead-show-controls=true>
+  <!-- cui-controls contains any items that should appear in the application frame heading bar-->
+  <div cui-controls>
+
+    <!-- creating a menu (menu items are not functional for this example) -->
+    <cui-drop-down-button label='{{user.name}}'>
+      <cui-menu-item>Log out</cui-menu-item>
+    </cui-drop-down-button>
+
+    <!-- opening a about box -->
+    <cui-button ng-click='showAboutBox()' ng-controller='AboutBoxCtrl'>
+      <cui-icon icon='question-sign'></cui-icon> About Box
+    </cui-button>
+
+  </div>
+
+  <!-- cui-content contains any content that should appear in the main part of the application-->
+  <div cui-content>
+
+    <!-- Some example layout using cui-grid : http://ce.software.dell.com/cx/cui/grid/ -->
+    <div class='cui-grid'>
+      <!-- create a full width row -->
+      <div class='cui-unit cui-whole'>
+        <!-- Typography : http://ce.software.dell.com/cx/cui/typography/ -->
+        <h1>Hello {{user.name}}</h1>
+        <h2>Welcome to the Sitraka - CUI example page</h2>
+      </div>
+    </div>
+
+    <div class='cui-grid'>
+      <!-- create a half width column -->
+      <div class='cui-unit cui-half'>
+        <h3>Package Overview</h3>
+        <p>This package contains most everything you will need to create a Dell branded UI. The CSS, JS, and associated font files are all available in this package. Where applicable, we have provided an unminified version which is helpful during development, and a minified version which can be used when deployed to keep file sizes small.</p>
+
+        <p>Additional documentation can be found at:</p>
+        <ul>
+          <li><a href='http://ce.software.dell.com/cx/cui/getting-started/' target='_blank' title='Getting Started'>Getting Started with CUI</a></li>
+          <li><a href='http://ce.software.dell.com/cx/cui/api/' target='_blank' title='API Docs'>API Docs</a></li>
+          <li><a href='http://ce.software.dell.com/cx/cui/learn/tutorials/' target='_blank' title='Tutorials'>Tutorials</a></li>
+          <li><a href='http://ce.software.dell.com/cx/cui/learn/angular-basics/' target='_blank' title='Angular Basics'>Angular Basics</a></li>
+          <li><a href='http://ce.software.dell.com/cx/cui/learn/angular-form-basics/' target='_blank' title='Angular Forms'>Angular Forms</a></li>
+          <li><a href='http://ce.software.dell.com/cx/cui/learn/angular-translate/' target='_blank' title='Angular Translate'>Angular Translate</a></li>
+        </ul>
+
+      </div>
+      <div class='cui-unit cui-half'>
+
+        <h3>Package Contents</h3>
+          <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> languages</dt>
+            <dd>Translate terms and phrases in your app</dd>
+            <dd>Add additional language files as needed</dd>
+            <dd>Learn more about <a href='http://ce.software.dell.com/cx/cui/learn/angular-translate/' target='_blank' title='Learn more about CUI translate'>translation</a> in CUI.</dd>
+          </dl>
+
+          <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> js</dt>
+            <dd>CUI JS and Vendor JS(Angular)</dd>
+            <dd>Contains minified and unminified versions</dd>
+          </dl>
+
+          <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> css</dt>
+            <dd>Dell fonts, icon fonts, and CUI styles</dd>
+            <dd>Contains minified and unminified version</dd>
+          </dl>
+      </div>
+
+      <div class='cui-unit cui-whole'>
+        <blockquote>Remember to develop with unminified files, and deploy with minified files!</blockquote>
+      </div>
+    </div>
+
+    <div class='cui-grid'>
+      <div class='cui-unit cui-half'>
+        <h3>CUI Application Frame</h3>
+        <p>The CUI Application Frame is a responsive control that provides your application with the primary branding elements of the masthead and the navigation. The ability to configure some key features, such as the application name, the logo, navigation, and secondary controls/navigation in the header is baked in. This example page demonstrates some of the most common features in any Dell application.</p>
+
+        <p>Learn more about the <a href='http://ce.software.dell.com/cx/cui/api/directive/applicationFrame/' target='_blank' title='Learn more about the Cui Application Frame'>CUI Application Frame</a>.</p>
+
+      </div>
+      <div class='cui-unit cui-half'>
+        <h3>CUI Application Frame Elements</h3>
+        <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> <code>cui-application-frame</code> element</dt>
+            <dd>Provides application level configuration</dd>
+          </dl>
+
+          <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> <code>cui-controls</code> element</dt>
+            <dd>Include header controls/navigation items</dd>
+          </dl>
+
+          <dl>
+            <dt><cui-icon icon='folder-close-alt'></cui-icon> <code>cui-content</code> element</dt>
+            <dd>Main area for content/views</dd>
+          </dl>
+      </div>
+    </div>
+
+    <div class='cui-grid'>
+      <div class='cui-unit cui-whole'>
+        <h2>Configuration and Layout of this page</h2>
+      </div>
+    </div>
+
+    <div class='cui-grid'>
+      <div class='cui-unit cui-half'>
+        <h3>Navigation</h3>
+        <p>In the <code>AppController</code> controller, you can see how the navigation on this page is configured by creating an array of objects in the <code>controller</code> and then adding that as a property on the <code>$scope</code>. Then we set the <code>navigation-items</code> attribute of the <code>cui-application-frame</code> element to that <code>$scope</code> property.</p>
+
+        <p>The <a href='http://ce.software.dell.com/cx/cui/api/directive/applicationFrame/' target='_blank' title='CUI Application Frame navigation configuration options'>CUI Application Frame API Doc</a> outlines the various attributes that you can use to configure the navigation and other features.</p>
+      </div>
+
+      <div class='cui-unit cui-half'>
+        <h3>CUI About Box</h3>
+        <p>There is an additional <code>controller</code> that demonstrates how to implement the CUI About Box, which is added via the <code>cui-controls</code> element of the CUI Application Frame as a CUI Button control. The button makes use of an internal Angular directive <code>ng-click</code> to trigger the opening of the CUI About Box. This particular CUI control injects a service into its <code>controller</code> when instantiated by passing <code>cuiAboutBox</code> as an argument along with <code>$scope</code>.</p>
+
+        <p>You'll notice that the About Box is using a nested <code>AboutBoxCtrl</code> controller inside of the <code>AppController</code>. Using multiple nested controllers in an Angular application is considered a best practice to separate concerns and maintain the single responsibility principle. The CUI About Box in this example is very basic. You'll notice that there are provided templates for the basic tabs.</p>
+
+        <p>To learn more about how to configure the <a href='http://ce.software.dell.com/cx/cui/api/service/aboutBox/' target='_blank' title='Learn how to configure the CUI About Box'>CUI About Box.</a></p>
+      </div>
+    <div>
+    <div class='cui-grid'>
+
+      <div class='cui-unit cui-half'>
+        <h3>CUI CSS</h3>
+        <p>Throughout this page you'll notice various class names. Most notable here is the use of the CUI Layout Grid. It is a basic CSS layout grid that should provide your application with solid structure. Please consider that if you are ending up needing to nest <code>grid-unit</code> upon <code>grid-unit</code>, there is most likely a better alternative to your layout.</p>
+
+        <p>Read up on the <a href='http://ce.software.dell.com/cx/cui/grid/' target='_blank' title='Read more about the CUI Layout Grid'>CUI Layout Grid</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</cui-application-frame>
+<script>
+  angular.module('myApp', ['cui']).
+  controller('AppController', function($scope) {
+
+    // It's bad juju to bind data directly to the $scope, so we create a plain ol' variable for our data.
+    var user = {
+      name: 'Connor U. Ingersoll'
+    };
+
+    // Create a property of the $scope - user and set it to the value of our user object. This way we are not create and modifying data directly on the $scope.
+    $scope.user = user;
+
+    // Same concept as before. Create a variable to hold our navigation array...
+    var applicationframe = {
+      navigation: [
+        {
+          label: 'Home',
+          icon: 'home'
+        },
+        {
+          label: 'CUI Links',
+          icon: 'star-empty',
+          visible: false,
+          children: [
+            {
+              label: 'Home',
+              href: 'http://ce.software.dell.com/cx/cui/'
+            },
+            {
+              label: 'Getting Started',
+              href: 'http://ce.software.dell.com/cx/cui/getting-started/'
+            },
+            {
+              label: 'API Docs',
+              href: 'http://ce.software.dell.com/cx/cui/api/'
+            },
+            {
+              label: 'FAQ\'s',
+              href: 'http://ce.software.dell.com/cx/cui/faq/'
+            },
+            {
+              label: 'Common UX Commons',
+              href: 'https://commons.quest.com/community/r-d/common_engineering_criteria/common_ux'
+            }
+          ]
+        },
+        {
+          label: 'Angular.js Docs',
+          icon: 'magic',
+          href: 'http://angularjs.org'
+        }
+      ]
+    }
+
+    // ... Then bind it to the scope.
+    $scope.applicationframe = applicationframe;
+  })
+  .controller('AboutBoxCtrl', function($scope, cuiAboutBox) {
+    // We've create a new controller to manage the CUI About Box and have passed in the cuiAboutBox service as an argument.
+
+    // Then we create a variable that will give use access to the cuiAboutBox methods, and pass in parameters to configure the CUI About Box.
+    var aboutBox = cuiAboutBox({
+      applicationName: 'Sitraka'
+    });
+
+    // cuiAboutBox returns a scope for the aboutBox, that has the modal property on it and exposes different methods to control the state of the modal.
+    $scope.showAboutBox = aboutBox.modal.show;
+
+    // Learn more about the CUI About Box, its methods for controlling a modal and configuration parameters see  http://ce.software.dell.com/cx/cui/api/service/aboutBox/
+  });
+</script>
+</body>
+</html>

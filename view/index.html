@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Monitor Labs App</title>
+    <script src="../lib/cui-2.6.0/js/cui-vendor.min.js"></script>
+    <script src="../lib/angular/angular-ui-router.min.js"></script>
+    <script src="../lib/cui-2.6.0/js/cui.min.js"></script>
+    <script src="../public/js/filter.js"></script>
+    <script src="../public/js/app.js"></script>
+     <script src="../public/js/directive.js"></script>
+
+    <link rel="stylesheet" dsa-dynamic-style-link />
+    
+    <link rel="Stylesheet" type="text/css" href="../lib/Metro-UI-CSS/css/metro.min.css" />
+    <link rel="Stylesheet" type="text/css" href="../lib/Metro-UI-CSS/css/metro-icons.min.css" />
+    
+    
+    <link rel="Stylesheet" type="text/css" href="../lib/cui-2.6.0/css/cui.min.css" />
+    <link rel="Stylesheet" type="text/css" href="../public/css/app.css" />
+     <link rel="Stylesheet" type="text/css" href="../public/css/search-animation.css" />
+    
+</head>
+<body ng-app="monitorApp">
+    <div id="appControllerContainer" ng-controller="appController">
+        <iframe id="downloadFrame" style="display:none"></iframe>
+        <div ng-include="'../view/MonitorBanner.html'"  class="bootstrap" dsa-resource-template></div>
+        <div id="container" class="cui-grid">
+            <div class='cui-unit cui-one-fifth labs-navigation'>
+                <div ng-include="'../view/Navigation.html'"  class="bootstrap " dsa-resource-template ></div>
+            </div>
+            <div class='cui-unit cui-four-fifths'>
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

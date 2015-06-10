@@ -1,0 +1,41 @@
+
+<span >available:&nbsp&nbsp</span>
+<select ng-model="available">			
+	<option value="true">TRUE</option>
+	<option value="false">FALSE</option>
+	<option value="excep">EXCEP</option>
+	<option value="all">ALL</option>
+</select>
+<hr>
+<div  class="tile-container">
+
+	<div class="tile-wide fg-black " data-role="tile" ng-repeat="vm in vms | vmsFilter:['ClientName','State']:available | orderBy:orderProp"
+	 ng-class="{vmDivBusy:vm.ClientName != null && vm.ClientName !='', vmDivException: vm.State != 'Active',
+	  vmDivAvailable: (vm.ClientName == '' || vm.ClientName == null) && vm.State == 'Active'}">
+		<div class="tile-content iconic" >
+			<div class="slide">
+	            <span class="icon mif-display labDetails"></span>
+        	</div>
+        	<span class="tile-badge bg-darkGreen right0" ng-if="vm.historyUsers.length > 1">{{vm.historyUsers.length}}</span>
+		 <h1 class="tile-label text-accent " style="position:relative">{{vm.ComputerName}}
+			
+		 </h1>
+		 <h5 class="tile-label text-default" >clientName:<span class="padding10" ng-if="vm.ClientName == null">N/A</span>{{vm.ClientName}}</h5>
+		 <h5 class="tile-label text-default" >
+		 	Recently visited:
+		 	<span class="padding10" ng-if="vm.historyUsers[0].timeDifference == null">N/A
+		 	</span>
+		 	{{vm.historyUsers[0].timeDifference}}
+			<!-- <cui-button href="#" ng-if="vm.historyUsers.length > 1" style="padding-left:5px; background-color:rgb(27, 161, 226); color:white;" size="small" ng-click="showRemainUsers(vm)">More...<cui-icon icon="angle-right align-right" > -->
+			<a href="" ng-if="vm.historyUsers.length > 1" style="padding-left:5px; text-decoration:none; color:black" size="small" ng-click="showRemainUsers(vm)">Details...<cui-icon icon="angle-right align-right" >
+			</cui-icon><cui-icon icon="angle-right align-right" ></cui-icon><cui-icon icon="angle-right align-right" ></cui-icon></a>
+
+		 </h5>
+		 <h1 class="tile-label text-secondary width100 align-right" style="padding-right:15px; padding-bottom:0px" ng-if="(vm.ClientName==null || vm.ClientName=='') && vm.State == 'Active'">
+		 	<cui-button size="small" style="background-color:rgb(27, 161, 226); color:white;" ng-click="downloadRDPFile(vm)"> connect  
+		 	<cui-icon icon="chevron-sign-right align-right"  ></cui-icon></cui-button>
+		 </h1>
+		</div>
+	</div>
+</div>
+

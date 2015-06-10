@@ -1,0 +1,421 @@
+<h1 id="cui-changelog">CUI Changelog</h1>
+<p>This changelog provides information on new features, bugfixes and breaking changes in CUI. You should always check it before upgrading.</p>
+<hr>
+<h2 id="2-6-0-2015-04-13-">2.6.0 (2015-04-13)</h2>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>datePicker:</strong> close tip when click input and then document (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/1f35399101034973a36b5e64fa9d1eb9ab02c3aa">1f353991</a>, closes <a href="https://jira.labs.dell.com/browse/CUI2-1243">#1243</a>)</li>
+<li><strong>masthead:</strong> logos now work again. logos get height added to them with css now (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/30f5e53330d0c84b40d35167c92e628d80a385be">30f5e533</a>, closes <a href="https://jira.labs.dell.com/browse/CUI2-202">#202</a>)</li>
+<li><strong>uiSelect:</strong> upgrade to 0.11.2 (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/acedecf56a65d105c5b26d3e07cdc6db06272739">acedecf5</a>, closes <a href="https://jira.labs.dell.com/browse/CUI2-201">#201</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>fonts:</strong> add additional font weights (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/065da0fef3e833ff0133a935eadc6142f43f8379">065da0fe</a>, closes <a href="https://jira.labs.dell.com/browse/CUI2-11">#11</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li><p>This is a breaking change upgrade on UI Select, as we&#39;ve upgraded from UI Select 0.9.4 --&gt; 0.11.2. Please check their releases to make sure there are no breaking changes affecting your usage: <a href="https://github.com/angular-ui/ui-select/releases">https://github.com/angular-ui/ui-select/releases</a>.</p>
+<p>(<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/acedecf56a65d105c5b26d3e07cdc6db06272739">acedecf5</a>)</p>
+</li>
+</ul>
+<h3 id="2-5-7-2015-04-13-">2.5.7 (2015-04-13)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>masthead:</strong> logos now work again. logos get height added to them with css now (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ba810026049fc5ae71f9109cf95b9055e03480d2">ba810026</a>, closes <a href="https://jira.labs.dell.com/browse/CUI2-202">#202</a>)</li>
+</ul>
+<h3 id="2-6-0-rc-2-2015-03-18-">2.6.0-rc.2 (2015-03-18)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>masterDetail:</strong> upgraded with new table component (w/ prev ci) (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f3c7022b4e067ec3bf432d2624d6e25d24229e1c">f3c7022b</a>)</li>
+<li><strong>table:</strong> add new Smart-Table component, deprecate dataGrid/cuiTable (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ddd147ddbac7ce4f6c960359506f5079e138597d">ddd147dd</a>, closes <a href="https://jira.kace.com/browse/CUI2-161">#161</a>)</li>
+</ul>
+<h3 id="2-6-0-rc-1-2015-01-15-">2.6.0-rc.1 (2015-01-15)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>applicationFrame:</strong> content area div is now 100% width of screen (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/9f5c235ab2b4962c8aa0ef9b03739da7e6367525">9f5c235a</a>, closes <a href="https://jira.kace.com/browse/CUX-1218">#1218</a>)</li>
+<li><strong>collapse:</strong> immediately open the item if no height (hidden, for example). Affects <code>alert</code>, ` (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/21134f0725a41935bb278b059b296f02a3bd1d20">21134f07</a>, closes <a href="https://jira.kace.com/browse/CUX-1207">#1207</a>)</li>
+<li><strong>datePicker:</strong> clicking edge case closes date picker popup (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ac771557ca084cf030c9feb9dc49115c2a0598b4">ac771557</a>, closes <a href="https://jira.kace.com/browse/CUX-1221">#1221</a>)</li>
+<li><strong>dropDownButton:</strong> update examples, click propagation when used in masthead (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3ee88559083a201c287bd61c0656d2f8fb11a5be">3ee88559</a>, closes <a href="https://jira.kace.com/browse/CUX-1173">#1173</a>)</li>
+<li><strong>modal:</strong> flicker of buttons from ngAnimate (when upgrading angular) (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4a4302a92c2cbcb6987ca7a3ee546c1d3b0c40b9">4a4302a9</a>)</li>
+<li><strong>pickers:</strong> z-index in front of modals, only constrain pickers to the window (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/2c6f4958b29e367781e26d3c88de5c260f419080">2c6f4958</a>, closes <a href="https://jira.kace.com/browse/CUX-1201">#1201</a>)</li>
+<li><strong>tip:</strong> z-index for tips is now correct (whether menu, tip, etc) (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4fdac2bb480679bc77bd45c5fb12d92d9a6fb47a">4fdac2bb</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>uiSelect:</strong><ul>
+<li>update to 0.9.4 which includes tagging (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/76613fdb5c973d3876c060beb52ebaa7529fe303">76613fdb</a>)</li>
+<li>add UI Select to CUI, ngSanitize, customize select (HTML/CSS) (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/729477254eaeef1f4fd1347bbcf0f06840265c4e">72947725</a>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-5-6-2015-01-15-">2.5.6 (2015-01-15)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>aboutBox:</strong> remove special character from CSS file to appease VS (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b7fad36b9a47c5232126bf926e7c603a86b024ac">b7fad36b</a>, closes <a href="https://jira.kace.com/browse/CUX-1217">#1217</a>)</li>
+<li><strong>combobox:</strong> update filtered items when textbox is emptied (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b043f1412e574e5fdeba7555516a7ae8472d8a0f">b043f141</a>, closes <a href="https://jira.kace.com/browse/CUX-1210">#1210</a>)</li>
+<li><strong>navigationList:</strong> tabbing through items (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b216c279db479770558fab1ba78dea8322a9e4cc">b216c279</a>, closes <a href="https://jira.kace.com/browse/CUX-1214">#1214</a>)</li>
+<li><strong>pane:</strong> prevent multiple events from being fired when expanding/collapsing (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/cf46bf1c3467bc964caf754398af8acda5290193">cf46bf1c</a>, closes <a href="https://jira.kace.com/browse/CUX-1194">#1194</a>)</li>
+<li><strong>table:</strong> consistent table header text alignment (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/cec7ae273eb366f384a3c1a1a33cc9e279e521d3">cec7ae27</a>, closes <a href="https://jira.kace.com/browse/CUX-1170">#1170</a>)</li>
+<li><strong>textBox:</strong> type <code>number</code>: disabled state styles, testing, functionality (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/c8db28f6393a96cd21c0fcd7015c43e4a2ccd5cd">c8db28f6</a>, closes <a href="https://jira.kace.com/browse/CUX-1202">#1202</a>)</li>
+<li><strong>textbox:</strong> default [type=&quot;text&quot;] for textbox (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ce3a3ff633d578942fbe7d7cc09c91e00aa2e6c2">ce3a3ff6</a>, closes <a href="https://jira.kace.com/browse/CUX-1182">#1182</a>)</li>
+<li><strong>wizard:</strong> disable finish button when on last step and it&#39;s invalid and edit mode (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/409dd14d27f7c2aae722f8de8415dd0a14e93689">409dd14d</a>, closes <a href="https://jira.kace.com/browse/CUX-1195">#1195</a>)</li>
+</ul>
+<h3 id="2-6-0-beta-4-2014-11-18-">2.6.0-beta.4 (2014-11-18)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>dataGrid:</strong> <code>selected</code> and <code>checked</code> properties are now available (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/1e60baa0f9b866326084d64ce6a82110be8c1bbb">1e60baa0</a>, closes <a href="https://jira.kace.com/browse/CUX-1196">#1196</a>)</li>
+<li><strong>masterDetail:</strong> major refactor: removed coffeescript, refactor css/examples (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/07c1047b0c2df924689f8eb2ddcb13e3a5e4502a">07c1047b</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li>Master Detail refactor</li>
+<li>Data Grid row selection and checking</li>
+</ul>
+<h3 id="2-6-0-beta-3-2014-11-14-">2.6.0-beta.3 (2014-11-14)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>dataGrid:</strong> remove &#39;track by&#39; from columns/rows of dataGrid (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/d3820a31085ae4805246fb69182fa452d8921506">d3820a31</a>)</li>
+<li><strong>navigationList:</strong> programatic open/closing children works properly (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/0ba43e3b581b40bb7b964e3150f96d2730c3e187">0ba43e3b</a>, closes <a href="https://jira.kace.com/browse/CUX-1184">#1184</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>calendar:</strong> major refactor: new EDG style, ngModel support, better maintainability (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/68f3d37493e1cff896ecdea254f485a03446bc67">68f3d374</a>, closes <a href="https://jira.kace.com/browse/CUX-845">#845</a>, <a href="https://jira.kace.com/browse/CUX-1178">#1178</a>)</li>
+<li><strong>dataGrid:</strong><ul>
+<li>listen for <code>cui:dataGrid:refresh</code> and refresh data grid when fired (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/21e49ff2a8e555f556f57cc09a38eaa4787922de">21e49ff2</a>, closes <a href="https://jira.kace.com/browse/CUX-1191">#1191</a>)</li>
+<li>allow for <code>cellTemplate</code> and <code>className</code> properties on columns (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/1e5b59aa53cd43e92d24bf84418e41db29e9157d">1e5b59aa</a>, closes <a href="https://jira.kace.com/browse/CUX-1170">#1170</a>)</li>
+</ul>
+</li>
+<li><strong>datePicker/dateTimePicker:</strong> complete refactor of datePicker, added dateTimePicker (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5ea6365a0cc7a01fff0bdfd6b28aa8e2d8efb140">5ea6365a</a>, closes <a href="https://jira.kace.com/browse/CUX-902">#902</a>, <a href="https://jira.kace.com/browse/CUX-1056">#1056</a>, <a href="https://jira.kace.com/browse/CUX-1074">#1074</a>, <a href="https://jira.kace.com/browse/CUX-1135">#1135</a>)</li>
+<li><strong>icon:</strong><ul>
+<li>support base classes with custom prefixes (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/23e6b12348aaeeffbe1fc7c49ed6aa016548da35">23e6b123</a>)</li>
+<li>support custom icons fonts with <code>cui-icon</code> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e3646e8d011d51a49ded0f1fc677f9c8b3d448cd">e3646e8d</a>, closes <a href="https://jira.kace.com/browse/CUX-715">#715</a>)</li>
+</ul>
+</li>
+<li><strong>time:</strong> time directive to manipulate times of dates (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/cffa0f408dcd00917a6c49e2a29c3da107a9dd7b">cffa0f40</a>, closes <a href="https://jira.kace.com/browse/CUX-1192">#1192</a>)</li>
+<li><strong>timePicker:</strong> manipulate times for JS dates in forms (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/a9a8f62f63384e836b96e58110fae847a5f2536b">a9a8f62f</a>, closes <a href="https://jira.kace.com/browse/CUX-1160">#1160</a>, <a href="https://jira.kace.com/browse/CUX-950">#950</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li>Calendar <code>date</code> attribute for the value of the calendar changed to <code>ngModel</code></li>
+<li><code>datePicker</code> large refactor -- <code>ngModel</code> is still used, but changed from element to attribute, and other directives required (such as <code>dateParser</code> and <code>cuiTextBox</code>). Please visit docs for more info</li>
+</ul>
+<h3 id="2-5-5-2014-11-14-">2.5.5 (2014-11-14)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>aboutBox:</strong> remove table row hover color (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3db5068160e0fc805a7dd7862993a3a62a2fe53c">3db50681</a>, closes <a href="https://jira.kace.com/browse/CUX-1177">#1177</a>)</li>
+<li><strong>applicationFrame/masthead:</strong> css breakpoints are now consistent (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/a04ffba6a1045b36faea9c7ee25801ccd70bfa37">a04ffba6</a>, closes <a href="https://jira.kace.com/browse/CUX-1188">#1188</a>)</li>
+<li><strong>dataGrid:</strong> stop duplicate api calls (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/40bd22685f40cfefe9d0bd1cebb40a93540e81b9">40bd2268</a>, closes <a href="https://jira.kace.com/browse/CUX-1112">#1112</a>)</li>
+</ul>
+<h3 id="2-6-0-beta-2-2014-10-31-">2.6.0-beta.2 (2014-10-31)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>alertService:</strong> always show alerts below masthead (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/7006fc5b95fac40091f4adb9de86722ed860a60d">7006fc5b</a>, closes <a href="https://jira.kace.com/browse/CUX-1120">#1120</a>)</li>
+<li><strong>collapse:</strong> add cuiCollapse directive to help with collapsable animations (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/aa9db4c906ca5ddffac31bcf2b8ae187ac604b5c">aa9db4c9</a>)</li>
+<li><strong>navigationList:</strong> expanding and collapsing menus are now animated (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/2244332688037a3dd9b7ddd7b0e5ea9d72d26930">22443326</a>)</li>
+<li><strong>pane:</strong> animation on collapsing/expanding (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5c5eb4804a7a207c18fc1d4b3b4a468b4324c1ae">5c5eb480</a>)</li>
+<li><strong>startScreen:</strong> refactoring, CODE/API cleaning, polish (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e9e60713d6611639437496550f9a4064e1447577">e9e60713</a>, closes <a href="https://jira.kace.com/browse/CUX-1103">#1103</a>)</li>
+<li><strong>tip:</strong> Add cuiTip directive and service, based on Drop by Hubspot (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/d0bf094d6a23e4ef6a70cce81aa8442f9e6d2355">d0bf094d</a>, closes <a href="https://jira.kace.com/browse/CUX-1126">#1126</a>, <a href="https://jira.kace.com/browse/CUX-1005">#1005</a>, <a href="https://jira.kace.com/browse/CUX-1157">#1157</a>, <a href="https://jira.kace.com/browse/CUX-999">#999</a>, <a href="https://jira.kace.com/browse/CUX-1138">#1138</a>)</li>
+<li><strong>transition:</strong> add cuiTransition service to help with height animations (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e419b36ca1fc37878935c400fdda944b8b78242c">e419b36c</a>)</li>
+<li><strong>tree:</strong> animation on expanding/collapsing children (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/bd88d3248bf5c39878229dd92c4166736fe17d82">bd88d324</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li><p>The Split Button now requires a <code>&lt;ul&gt;</code> to be
+transcluded instead of multiple <code>&lt;cui-menu-item&gt;</code>s.</p>
+<p>(<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/fb947b8795c932bc2dde37b6ec21e674147f2751">fb947b87</a>)</p>
+</li>
+<li><p>The Drop Down Button no longer uses <code>cui-menu-item</code>&#39;s, but instead use a
+<code>&lt;ul cui-keyboard-menu&gt;</code> with nested <code>&lt;li&gt;</code>s</p>
+<p>(<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/21337186720e605b7e8283dd867b78ae850d82c9">21337186</a>)</p>
+</li>
+</ul>
+<h3 id="2-5-4-2014-10-31-">2.5.4 (2014-10-31)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>dataSource:</strong> add error handling for <code>get</code> method (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/01a462c35d143bc6132fcd2548086b7014035fa5">01a462c3</a>, closes <a href="https://jira.kace.com/browse/CUX-1158">#1158</a>)</li>
+<li><strong>loading:</strong> cuiLoading should not show a perpetum when deferred was already resolved/rejecte (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b3c1586ad04db8f57b2d46d9cc17f76f0b25f957">b3c1586a</a>, closes <a href="https://jira.kace.com/browse/CUX-1108">#1108</a>)</li>
+<li><strong>progressBar:</strong> compilation vs link issues (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/8959af281480a9809de824285a721ac93bcf5397">8959af28</a>, closes <a href="https://jira.kace.com/browse/CUX-1141">#1141</a>)</li>
+<li><strong>wizard:</strong> better support for wizard in a modal with small resolution (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b79d8f1c195cd3469b8947d495ec9e4ad0ef91ac">b79d8f1c</a>, closes <a href="https://jira.kace.com/browse/CUX-1162">#1162</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>dataGrid:</strong> event for handling API errors (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f1233e1bfc8d6121a25b9c0c04f3a1106dd6e6f5">f1233e1b</a>, closes <a href="https://jira.kace.com/browse/CUX-1059">#1059</a>)</li>
+</ul>
+<h3 id="2-6-0-beta-1-2014-10-16-">2.6.0-beta.1 (2014-10-16)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>alert:</strong> add events for closing/done closing, documentation (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/2d602b248a8b2a688c43f1a70289ee83fb6893e4">2d602b24</a>)</li>
+<li><strong>alertService:</strong><ul>
+<li>multiple alert locations on the page (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f227251070d43182cd75491b79c8b3a4f8f3aa3c">f2272510</a>, closes <a href="https://jira.kace.com/browse/CUX-906">#906</a>)</li>
+<li>change promise to resolve when alert is dismissed (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4013d1699e19886ca65b20bd974965236a5a964d">4013d169</a>, closes <a href="https://jira.kace.com/browse/CUX-1047">#1047</a>)</li>
+</ul>
+</li>
+<li><strong>masterDetail:</strong> initial commit (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/38b45cd10c528aa4fc8db28f00c955eaf79551a0">38b45cd1</a>)</li>
+<li><strong>wizard:</strong> finish/cancel no longer navigate, add first/last events instead (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/c534846cf315c5bde478b8488f61945a08b1aaad">c534846c</a>, closes <a href="https://jira.kace.com/browse/CUX-1048">#1048</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li>Wizard no longer navigates to first/last step when cancelling or finishing. This must be done manually (broadcasting an event).</li>
+</ul>
+<p>Closes #1048.</p>
+<p> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/c534846cf315c5bde478b8488f61945a08b1aaad">c534846c</a>)</p>
+<ul>
+<li>The Alert Service no longer resolves with the HTML element, but rather when the alert is closed (either by the user or programatically).</li>
+</ul>
+<p>Closes #1047.</p>
+<p> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4013d1699e19886ca65b20bd974965236a5a964d">4013d169</a>)</p>
+<h3 id="2-5-3-2014-10-16-">2.5.3 (2014-10-16)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>modal:</strong> modal displays above all other content (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/91553a2d27ae5a2325b16edf3562f73660dee144">91553a2d</a>, closes <a href="https://jira.kace.com/browse/CUX-1043">#1043</a>)</li>
+<li><strong>wizard:</strong> stop <code>$destroy</code>ing the wizard from creating a stack overflow (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f6f0adabd471572fdac302ad64de5edae0dfce4c">f6f0adab</a>, closes <a href="https://jira.kace.com/browse/CUX-1109">#1109</a>)</li>
+</ul>
+<h3 id="2-5-2-2014-10-08-">2.5.2 (2014-10-08)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>applicationFrame:</strong> do not reclone upon second time transcluding (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f0f753bd0efa162a39d867b24e6479719f36ac3e">f0f753bd</a>, closes <a href="https://jira.kace.com/browse/CUX-1073">#1073</a>)</li>
+<li><strong>button:</strong> remove ngClass and ngMouseUp from base cui-button element (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/f960a944f2e269ee591f357d18e9d4c7c7306dd7">f960a944</a>, closes <a href="https://jira.kace.com/browse/CUX-1020">#1020</a>)</li>
+<li><strong>dropDownList:</strong> remove CUI styles to dropDownList if &lt; ie10 (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/42134c883b61aecb163d3615a11c6120c634f2e0">42134c88</a>, closes <a href="https://jira.kace.com/browse/CUX-1083">#1083</a>)</li>
+<li><strong>masthead:</strong> don&#39;t stop click propagation on transcluded areas (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e6a28b8ca64bd4d09efaf27b14aa032417da5c05">e6a28b8c</a>, closes <a href="https://jira.kace.com/browse/CUX-1077">#1077</a>)</li>
+<li><strong>pane:</strong><ul>
+<li>change <code>title</code> attribute to <code>cui-title</code>. Backward compatibility will be maintain (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/33a2079b8e6d88d61afdf8d9d6b54f6c2ad6b511">33a2079b</a>, closes <a href="https://jira.kace.com/browse/CUX-1083">#1083</a>)</li>
+<li>update the bound <code>collapsed</code> param, if assignable (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/7d64e7637ca993c05e4478455b036b87dc062e7f">7d64e763</a>)</li>
+<li>watch the collapsed property for changes in state (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/9e955bc4755b022366bb8ab56d128d6374c14d16">9e955bc4</a>, closes <a href="https://jira.kace.com/browse/CUX-1038">#1038</a>)</li>
+</ul>
+</li>
+<li><strong>startScreen:</strong> enter button triggers form submission (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/58ec0aea1b3d739179af59bb370e7a934f929aea">58ec0aea</a>, closes <a href="https://jira.kace.com/browse/CUX-1045">#1045</a>)</li>
+<li><strong>wizard:</strong><ul>
+<li>emit <code>stepChanged</code>, run step <code>onEnter</code> fn when step changes but the currentStepI (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/76f1a4abe83a92d6b12b77f784957bc22aa2751c">76f1a4ab</a>, closes <a href="https://jira.kace.com/browse/CUX-1089">#1089</a>)</li>
+<li>change <code>title</code> attribute to <code>cui-title</code>. Backward compatibility will be maintain (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/bad4e99d8e0459d77b0f5d5255c4d550e32f2f8e">bad4e99d</a>, closes <a href="https://jira.kace.com/browse/CUX-1083">#1083</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>button:</strong> buttons now do not have styles overridden in masthead when specified through `cu (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/8c04fb49a5c9eb52097a7baedfb022ca3f7a8b78">8c04fb49</a>, closes <a href="https://jira.kace.com/browse/CUX-1087">#1087</a>)</li>
+<li><strong>modal:</strong> add scrollbars before animate out (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/0a5161d75ee9ee693b26004112663c56b3a5665b">0a5161d7</a>)</li>
+<li><strong>navigationList:</strong> overflowing text hide with ellipsis (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/8bc7210de67b6a2b05322887833544ad62c858dc">8bc7210d</a>, closes <a href="https://jira.kace.com/browse/CUX-1081">#1081</a>)</li>
+</ul>
+<h3 id="2-5-1-2014-09-16-">2.5.1 (2014-09-16)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>datePicker:</strong> calendar z-index is now set (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/fb6e0597ef53d7a4935a1433832dcbe186260748">fb6e0597</a>, closes <a href="https://jira.kace.com/browse/CUX-1035">#1035</a>)</li>
+<li><strong>modal:</strong> dismiss event not firing before scope is destroyed (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/75958799429ca2ed7edb43b8206842b0d37a4ff8">75958799</a>, closes <a href="https://jira.kace.com/browse/CUX-1031">#1031</a>)</li>
+</ul>
+<h3 id="2-5-0-2014-09-15-">2.5.0 (2014-09-15)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>StartScreen:</strong> Added RememberMe to return object. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/9961e9dc94595e53493c4cd1b5f0b7c0c4b7ae9e">9961e9dc</a>, closes <a href="https://jira.kace.com/browse/CUX-991">#991</a>)</li>
+<li><strong>aboutBox:</strong> incorrect english translations for the licenses table headers (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/21d8c581d2c2d47ef186d6a22e10b6a24d539a12">21d8c581</a>, closes <a href="https://jira.kace.com/browse/CUX-1012">#1012</a>)</li>
+<li><strong>applicationFrame:</strong> navigationPersist was not working due to interesting minification issues (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e0a83a23100c97bbbdb09abdbeeec8d2505df973">e0a83a23</a>, closes <a href="https://jira.kace.com/browse/CUX-1007">#1007</a>)</li>
+<li><strong>button:</strong> default button type to &quot;button&quot; (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/a2865e83d9a464ce635779bf82099d2122bc3b54">a2865e83</a>, closes <a href="https://jira.kace.com/browse/CUX-1030">#1030</a>)</li>
+<li><strong>datePicker:</strong><ul>
+<li>prevent button from submitting form (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/14edd8a5a145418b882c9667db89ffa7337f7b80">14edd8a5</a>, closes <a href="https://jira.kace.com/browse/CUX-1011">#1011</a>)</li>
+<li>button not staying pinned to the top of the textbox (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4ca106a323c6b84787b6ad43cbd7b1fda3f25ec8">4ca106a3</a>, closes <a href="https://jira.kace.com/browse/CUX-1009">#1009</a>)</li>
+</ul>
+</li>
+<li><strong>icon:</strong> remove vertical-align that was breaking ui tests (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e9433aba06a09440acc9a11a3c5230efead49106">e9433aba</a>)</li>
+<li><strong>masthead:</strong> clicks outside of menu close it, event closes menu (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3a19a110bc0b5ba98b84a548d8e4edd36c3218c1">3a19a110</a>, closes <a href="https://jira.kace.com/browse/CUX-983">#983</a>)</li>
+<li><strong>modal:</strong> refactor z-index solution and fix modal/masthead z-index conflicts (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/837ae72dc6b9a134acbcae339a544ae6a8a38db8">837ae72d</a>)</li>
+<li><strong>splitButton:</strong> add split button divider back (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/16193c64b30709ac45334946b2cc0b957975a722">16193c64</a>, closes <a href="https://jira.kace.com/browse/CUX-1016">#1016</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>dataGrid:</strong> add update event handler (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e98cede13e4b141d5327007810126b88aecd4cc1">e98cede1</a>, closes <a href="https://jira.kace.com/browse/CUX-1025">#1025</a>)</li>
+<li><strong>dialog:</strong> option for <esc> key to reject with message <code>&#39;keyboard&#39;</code> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/7abaf45a917617527ce40d51f823e0f8d9b1a581">7abaf45a</a>, closes <a href="https://jira.kace.com/browse/CUX-1029">#1029</a>)</li>
+<li><strong>loading:</strong> support other spinner colors in Loading Service (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/38f47ef9838947f9331e6953b27a637fd8f3a59e">38f47ef9</a>)</li>
+<li><strong>modal:</strong> modal <esc> to $broadcast <code>hide</code> event with message <code>&#39;keyboard&#39;</code> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/83a7eaceecc5f381387d4ecd0815861a1fa6fd9e">83a7eace</a>)</li>
+<li><strong>pane:</strong> add cui-pane directive for grouping content together in a collapsible pane on a  (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/6e0120fdf49dcc0b34751e3086d33c561ac45762">6e0120fd</a>)</li>
+<li><strong>spinner:</strong><ul>
+<li>add <code>black</code> color for spinner (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/76dc41e1b2c3f7444d5a34d4919885528a307e9a">76dc41e1</a>, closes <a href="https://jira.kace.com/browse/CUX-993">#993</a>)</li>
+<li>base64 encode pngs (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/91de65de20b29955bef8042d528d2e3144ce4d6c">91de65de</a>)</li>
+</ul>
+</li>
+<li><strong>startScreen:</strong>  Added rememberMe display option. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/d186da59a4ced5b93842d1aee44d3e44b7f7bba5">d186da59</a>, closes <a href="https://jira.kace.com/browse/CUX-946">#946</a>)</li>
+<li><strong>wizard:</strong><ul>
+<li>icon, test cleanup, refactoring and more (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3ece985f225d9fdc61d338c07e0dc64ce499a2dc">3ece985f</a>)</li>
+<li>finish depending on jumpForward; add onCancel (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/44f2b4bc58dac38085a06e255719f0ab958d6ac1">44f2b4bc</a>)</li>
+<li>first release of the wizard (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5d4f6bd862e6c340efa3c3f7a413775687062de0">5d4f6bd8</a>, closes <a href="https://jira.kace.com/browse/CUX-989">#989</a>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-4-2-2014-08-20-">2.4.2 (2014-08-20)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>aboutBox:</strong><ul>
+<li>stop opening when declared, allow passing in <code>options.visible</code>. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ccd451c3441646df01909e04c8a1e28abd441110">ccd451c3</a>, closes <a href="https://jira.kace.com/browse/CUX-1004">#1004</a>)</li>
+<li>agnostic layout down to 320px wide viewport (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/fe30559f2984ed29ac5b088ab6be0b2ff0b19353">fe30559f</a>, closes <a href="https://jira.kace.com/browse/CUX-994">#994</a>)</li>
+<li>put version number and patent info on the scope (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5ddfe04ab4ef6e1c6f871528c53fcc7e5313ad26">5ddfe04a</a>, closes <a href="https://jira.kace.com/browse/CUX-990">#990</a>)</li>
+</ul>
+</li>
+<li><strong>comboBox:</strong> input no longer overflows past into the button (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/a967381ee6dcaf1f9f3f765ef120f8ad6b45b4c6">a967381e</a>, closes <a href="https://jira.kace.com/browse/CUX-919">#919</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>applicationFrame:</strong> option for persisting navigationList state in the applicationFrame. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/df698eb75c0f794b065911109127f12ead1b48af">df698eb7</a>, closes <a href="https://jira.kace.com/browse/CUX-996">#996</a>)</li>
+<li><strong>dialog:</strong> ability to focus a button automatically when opened (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/79222f7b78caa86366614abbc98a592fe750a080">79222f7b</a>, closes <a href="https://jira.kace.com/browse/CUX-988">#988</a>)</li>
+<li><strong>modal:</strong> escape key closes the modal (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b46e5725f7e7bbaa8187e4d560ea66691eaf599e">b46e5725</a>, closes <a href="https://jira.kace.com/browse/CUX-998">#998</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li><strong>aboutBox:</strong> Not open by default. To restore old functionality, you must pass in <code>visible: true</code> into the options of the about box. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/ccd451c3441646df01909e04c8a1e28abd441110">ccd451c3</a>)</li>
+</ul>
+<h3 id="2-4-1-2014-07-31-">2.4.1 (2014-07-31)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>aboutBox:</strong> issues with overflowing thirdParty/licenses tabs, table spacing (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/cd197ca390056721f8d6aa82d668f27ce5e6088a">cd197ca3</a>, closes <a href="https://jira.kace.com/browse/CUX-985">#985</a>)</li>
+<li><strong>applicationFrame:</strong> hide navigation drawer button when there are no navigation items (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/983bc232e679c78c891edd387d7063b8dd35b052">983bc232</a>, closes <a href="https://jira.kace.com/browse/CUX-929">#929</a>)</li>
+<li><strong>modal:</strong> When not on top of document, the modal will still be positioned at the top (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/7a1258266c2e5cb1320bc12a8b787f5238cf90c1">7a125826</a>)</li>
+<li><strong>spinner:</strong> improve browser compatibility for the spinner. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/019f66b7201fa5936aa9e061aa8041572e133548">019f66b7</a>, closes <a href="https://jira.kace.com/browse/CUX-766">#766</a>)</li>
+<li><strong>masthead/applicationFrame:</strong> fix applicationHref not working (closes <a href="https://jira.kace.com/browse/CUX-948">#948</a>)</li>
+<li><strong>applicationFrame/navigationList:</strong> hides navigationList when item is clicked (closes <a href="https://jira.kace.com/browse/CUX-972">#972</a>)</li>
+<li><strong>startScreen:</strong><ul>
+<li>css override for checkbox making it blue fixed (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/db9e4a203ec8ff475a256ed3a6ecd76ac728a043">db9e4a20</a>)</li>
+<li>fix scope issue and add additional tests (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/c73f1dc38e9c6199de4b6f0caaf5abdafb8666b7">c73f1dc3</a>, closes <a href="https://jira.kace.com/browse/CUX-987">#987</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>modal:</strong> add eventing to modal <code>show</code>, <code>hide</code>, and <code>dismiss</code> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/8dba734cffd2260dc49421e1aa785fda243d79e7">8dba734c</a>, closes <a href="https://jira.kace.com/browse/CUX-980">#980</a>)</li>
+<li><strong>tabset:</strong> watch tab <code>active</code> attrs for change to truem, make it optional, clean up docs (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/41e7f1f5fa707ac70ac35d63369493d2f15bbd32">41e7f1f5</a>, closes <a href="https://jira.kace.com/browse/CUX-951">#951</a>)</li>
+<li><strong>startScreen:</strong> username domain field parsing (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/fc6aeea2ce29e035926a3015f4283921e7c9ed9e">fc6aeea2</a>, closes <a href="https://jira.kace.com/browse/CUX-949">#949</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li>The spinner no longer supports colors besides <code>blue</code> and <code>white</code>. For almost all uses cases, this is a non-issue. (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/019f66b7201fa5936aa9e061aa8041572e133548">019f66b7</a>)</li>
+</ul>
+<h3 id="2-4-0-2014-07-21-">2.4.0 (2014-07-21)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>__cui:</strong> Add releaseDate to the global __cui variable (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/d9a85afeea67059f247dfb54eda2a8544bdcd136">d9a85afe</a>)</li>
+<li><strong>aboutBox:</strong> change aboutBox to be a service instead of directive (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/425e31b0818b43034f9c2d505ff9959483c5be63">425e31b0</a>, closes <a href="https://jira.kace.com/browse/CUX-964">#964</a>)</li>
+<li><strong>button:</strong> add button <code>cuiType</code> of <code>&#39;link&#39;</code>, remove cuiPane directive (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/461c54e85b12290b247b4ef5220268206127362a">461c54e8</a>)</li>
+<li><strong>dialog:</strong> dialog service for easier simple modal prompts (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/fc5c476118165d165e51bf6b617c6c7566a506b4">fc5c4761</a>, closes <a href="https://jira.kace.com/browse/CUX-952">#952</a>)</li>
+<li><strong>loading:</strong> loading service to notify user when promises are being resolved (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/96eab4583172475f8ec397e4fb4b86a8813cbede">96eab458</a>, closes <a href="https://jira.kace.com/browse/CUX-939">#939</a>)</li>
+<li><strong>modal:</strong> change modal from directive to service (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3d5aee233383402813114cda8566ecc0fea22970">3d5aee23</a>, closes <a href="https://jira.kace.com/browse/CUX-963">#963</a>)</li>
+</ul>
+<h4 id="breaking-changes">Breaking Changes</h4>
+<ul>
+<li><code>&lt;cui-about-box&gt;</code> is no longer a valid directive. Please use the service
+<code>cuiAboutBox</code> instead. These changes parallel those found in the modal.</li>
+</ul>
+<p>For more information, please check the aboutBox documentation.</p>
+<p> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/425e31b0818b43034f9c2d505ff9959483c5be63">425e31b0</a>)</p>
+<ul>
+<li><code>cuiModal</code> is now injectable. The element <code>&lt;cui-modal&gt;</code> does not exist.
+Similarly, the old <code>cuiModalService</code> does not exist, leaving with the
+directive.</li>
+</ul>
+<p>Any markup used within the <code>&lt;cui-modal&gt;</code> directive can be either moved
+to an external html document, or added in a <code>&lt;script&gt;</code> tag as an
+<code>ng-template</code>. It can then be specified where this markup is through the
+configuration object passed into the <code>cuiModal</code>.</p>
+<p>Please see the documentation for the extensive rewrite of the modal,
+and how to update your modals to use this new form.</p>
+<p> (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/3d5aee233383402813114cda8566ecc0fea22970">3d5aee23</a>)</p>
+<h3 id="2-3-2-2014-07-07-">2.3.2 (2014-07-07)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>applicationFrame:</strong> incorrect padding between masthead and content area (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/e1a1546cb5b12367a1261b484970430584ffa069">e1a1546c</a>)</li>
+<li><strong>button:</strong> use ng-class for scope bound classes on templates (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/553b941553680b77290383f204f090220b06c030">553b9415</a>)</li>
+<li><strong>datepicker:</strong> update model on input blur (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/b47e462c11113851f8908a2356566dec04f3cf04">b47e462c</a>)</li>
+<li><strong>startScreen:</strong> add focus on load (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4a00a309c031d45290858f911f3542da36bfb632">4a00a309</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>alert:</strong> add option making non-user-dismissable alerts (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/c62d4f9d977c7c26d99c7bb772d385f1d116c403">c62d4f9d</a>, closes <a href="https://jira.kace.com/browse/CUX-899">#899</a>)</li>
+<li><strong>dataGrid:</strong> flexible <code>data</code> rows array location customization (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/498b8c5fa57c579cb25d051997dce0ad78033430">498b8c5f</a>)</li>
+<li><strong>startScreen:</strong> change copyright text to be in a sticky footer (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/193b90fa9b1fbc1194a1168eecca9af08379643c">193b90fa</a>, closes <a href="https://jira.kace.com/browse/CUX-920">#920</a>)</li>
+<li><strong>table:</strong> update to Smart-Table 0.2.2 (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5c9c31685101a0ff4280700ad8838982e796dd2d">5c9c3168</a>, closes <a href="https://jira.kace.com/browse/CUX-922">#922</a>)</li>
+<li><strong>tree:</strong> add ability to select non-leaf tree nodes (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/5aeba1fab2b4f0cb72ae0ce6f5070f746eb66c36">5aeba1fa</a>, closes <a href="https://jira.kace.com/browse/CUX-923">#923</a>)</li>
+</ul>
+<h3 id="2-3-1-2014-06-25-">2.3.1 (2014-06-25)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>grid:</strong> Allow for .cui-wider on the .cui-grid (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/a1a63aebbb2b749dd9503da6281cb83bca2a4114">a1a63aeb</a>, closes <a href="https://jira.kace.com/browse/CUX-829">#829</a>)</li>
+<li><strong>spinner:</strong> Correct spinner svg references in HTML5 mode (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/85279fe555793bc10020c69b2a570884aa572dd1">85279fe5</a>, closes <a href="https://jira.kace.com/browse/CUX-812">#812</a>)</li>
+<li><strong>startScreen:</strong> Add padding between icon and message text (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4003a7b145051653f36b5fd8e4a0a8997782dd6c">4003a7b1</a>)</li>
+<li><strong>typography:</strong> Fix definition list offset bug, add .list-clear and .list-inline (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/4536be759ad98cd2c6c1d67dec882213c545127c">4536be75</a>, closes <a href="https://jira.kace.com/browse/CUX-859">#859</a>, <a href="https://jira.kace.com/browse/CUX-860">#860</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>splitButton:</strong> Add icon support (<a href="https://stash.kace.com/projects/CUX/repos/cx-cui/commits/1ae1654d45863e2bc38bcdb6e1029be4bd8e2522">1ae1654d</a>, closes <a href="https://jira.kace.com/browse/CUX-858">#858</a>)</li>
+</ul>
+<h4 id="comments">Comments</h4>
+<p>In this release, we are starting a changelog. In addition, we&#39;ve manually created changelog entries for the fixes and features from the first beta up to now.</p>
+<h3 id="2-3-0-2014-06-14-">2.3.0 (2014-06-14)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>aria:</strong> Confirm aria support for controls and modules <a href="https://jira.kace.com/browse/CUX-688">#688</a></li>
+<li><strong>angular:</strong> Update to latest angular <a href="https://jira.kace.com/browse/CUX-840">#840</a></li>
+</ul>
+<h4 id="bugfixes">Bugfixes</h4>
+<ul>
+<li><strong>applicationFrame:</strong> Controllers instantiated three times <a href="https://jira.kace.com/browse/CUX-811">#811</a></li>
+</ul>
+<h3 id="2-2-0-2014-05-27-">2.2.0 (2014-05-27)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>alertService:</strong> Add angular service as cuiAlertService <a href="https://jira.kace.com/browse/CUX-824">#824</a></li>
+<li><strong>tooltip:</strong> Add angular directive for the cuiTooltip <a href="https://jira.kace.com/browse/CUX-758">#758</a></li>
+</ul>
+<h3 id="2-1-0-2014-04-28-">2.1.0 (2014-04-28)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>form:</strong> Add angular directive for forms <a href="https://jira.kace.com/browse/CUX-660">#660</a></li>
+<li><strong>templateCache:</strong> Cache the HTML templates in javascript <a href="https://jira.kace.com/browse/CUX-661">#661</a></li>
+<li><strong>richTextEditor:</strong> Revisit cuiRichTextEditor (v2) <a href="https://jira.kace.com/browse/CUX-703">#703</a></li>
+<li><strong>breadcrumb:</strong> Add angular directive for the cuiBreadcrumb <a href="https://jira.kace.com/browse/CUX-784">#784</a></li>
+<li><strong>applicationFrame:</strong> Add multi-transclusion to content area and controls <a href="https://jira.kace.com/browse/CUX-789">#789</a></li>
+<li><strong>dropDownButton:</strong> cuiDropDownButton icon support <a href="https://jira.kace.com/browse/CUX-793">#793</a></li>
+</ul>
+<h3 id="2-0-1-2014-04-16-">2.0.1 (2014-04-16)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>numericTextBox:</strong> Consolidate into the text box </li>
+</ul>
+<h2 id="2-0-0-2014-03-31-">2.0.0 (2014-03-31)</h2>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>grid:</strong> Add device-agnostic css grid system <a href="https://jira.kace.com/browse/CUX-706">#706</a></li>
+<li><strong>masthead:</strong> Add subtitle support <a href="https://jira.kace.com/browse/CUX-724">#724</a></li>
+</ul>
+<h4 id="bugfixes">Bugfixes</h4>
+<ul>
+<li><strong>aboutBox:</strong> Fix aboutBox done button <a href="https://jira.kace.com/browse/CUX-718">#718</a></li>
+</ul>
+<h3 id="2-0-0-beta-4-2014-03-17-">2.0.0 Beta 4 (2014-03-17)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>typography:</strong> Add typography css system, remove excessive css normalization <a href="https://jira.kace.com/browse/CUX-701">#701</a></li>
+<li><strong>keyboard support:</strong> Add keyboard navigation support <a href="https://jira.kace.com/browse/CUX-689">#689</a></li>
+<li><strong>bower:</strong> Allow CUI to be installable as Bower package <a href="https://jira.kace.com/browse/CUX-710">#710</a></li>
+</ul>
+<h3 id="2-0-0-beta-3-2014-03-03-">2.0.0 Beta 3 (2014-03-03)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>comboBox:</strong> Add angular directive for the cuiComboBox <a href="https://jira.kace.com/browse/CUX-35">#35</a></li>
+<li><strong>richTextEditor:</strong> Add angular directive for the cuiRichTextEditor <a href="https://jira.kace.com/browse/CUX-43">#43</a></li>
+<li><strong>splitButton:</strong> Add angular directive for the cuiSplitButton <a href="https://jira.kace.com/browse/CUX-41">#41</a></li>
+</ul>
+<h3 id="2-0-0-beta-2-2014-02-18-">2.0.0 Beta 2 (2014-02-18)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>dataGrid:</strong> Add angular directive for the cuiDataGrid <a href="https://jira.kace.com/browse/CUX-39">#39</a></li>
+<li><strong>dataSourceService:</strong> Add angular service for the cuiDataSourceService <a href="https://jira.kace.com/browse/CUX-42">#42</a></li>
+</ul>
+<h3 id="2-0-0-beta-1-2014-02-03-">2.0.0 Beta 1 (2014-02-03)</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>applicationFrame:</strong> Add angular directive for the cuiApplicationFrame <a href="https://jira.kace.com/browse/CUX-15">#15</a></li>
+<li><strong>colorService:</strong> Add colorService <a href="https://jira.kace.com/browse/CUX-26">#26</a></li>
+<li><strong>cuiStartScreen:</strong> Add angular directive for the cuiStartScreen <a href="https://jira.kace.com/browse/CUX-19">#19</a></li>
+<li><strong>aboutBox:</strong> Add angular directive for the cuiAboutBox <a href="https://jira.kace.com/browse/CUX-27">#27</a></li>
+<li><strong>dropDownButton:</strong> Add angular directive for the cuiDropDownButton <a href="https://jira.kace.com/browse/CUX-28">#28</a></li>
+<li><strong>dropDownList:</strong> Add angular directive for the cuiDropDownList <a href="https://jira.kace.com/browse/CUX-29">#29</a></li>
+<li><strong>menu:</strong> Add angular directive for the cuiMenu <a href="https://jira.kace.com/browse/CUX-31">#31</a></li>
+<li><strong>table:</strong> Add angular directive for the cuiTable <a href="https://jira.kace.com/browse/CUX-38">#38</a></li>
+<li><strong>spinner:</strong> Add angular directive for the cuiSpinner <a href="https://jira.kace.com/browse/CUX-40">#40</a></li>
+<li><strong>tree:</strong> Add angular directive for the cuiTree <a href="https://jira.kace.com/browse/CUX-40">#40</a></li>
+</ul>

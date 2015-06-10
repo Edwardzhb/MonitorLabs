@@ -1,0 +1,31 @@
+
+  <div ng-controller="labsNavigation" >
+    <cui-pane cui-title='Labs' icon='desktop' collapsed=false collapsible=true class="light" style="color:#999">
+      <span ng-if="lab.icon != null" class="{{lab.icon}} icon"></span>
+      
+      <ul>
+      	<li>
+      		<span class="mif-home icon"></span>
+      		<a href="#" ng-click="updateSiteMap('Home','','Home')" ui-sref="labDetails({domainName:'Home'})" class="light text-center iconColor">Home </a>
+      	</li>
+
+      </ul>
+      <ul>
+      	<li> <span>Search:</span> <input type="search" style="width:70%;" ng-model="q" placeholder="filter labs..." aria-label="filter labs"  /> </li>
+      </ul>
+      <!-- <ul ng-repeat="lab in labs | filter:q" ><li>
+        <span ng-if="lab.icon != null" class="{{lab.icon}} icon"></span>
+        <span ng-if="lab.icon == null" class="mif-display icon"></span>
+        <a href="#" ng-click="updateSiteMap('{{lab.domainName}}','','{{lab.domainName}}')" ui-sref="labDetails({domainName:'{{lab.domainName}}'})" class="light text-center iconColor">{{lab.domainName}} </a></li>
+      </ul> -->
+      <ul class="labs_ul">
+      	<li class="animate-repeat" ng-repeat="lab in labs | filter:q">
+      		<span ng-if="lab.icon != null" class="{{lab.icon}} icon"></span>
+	        <span ng-if="lab.icon == null" class="mif-display icon"></span>
+	        <a href="#" ng-click="updateSiteMap('{{lab.domainName}}','','{{lab.domainName}}')" ui-sref="labDetails({domainName:'{{lab.domainName}}'})" class="light text-center iconColor">{{lab.domainName}} </a>
+      	</li>
+
+      </ul>
+    </cui-pane>
+  </div>
+

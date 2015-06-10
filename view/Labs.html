@@ -1,0 +1,16 @@
+  <div ng-controller="labsNavigation" class="tile-container">
+    <div class="tile-wide bg-cyan fg-white" data-role="tile" ng-repeat="lab in labs" ng-show="lab.domainName != 'Home'" ng-click="getLabInfo('{{lab.domainName}}')">
+        <div class="tile-content iconic slide-up align-right " >
+        	<div class="slide">
+	            <span class="icon mif-laptop"></span>
+        	</div>
+        	<div class="slide-over op-green text-secondary padding10 uppercase" style="top:80%; height:20%; width:100%; text-align:right">
+             	<div class="tile-label text-secondary width90" >{{lab.domainName}} <cui-icon icon="chevron-sign-right align-right"></cui-icon>
+        		  </div>
+        	</div>
+        		
+
+        </div>
+    </div>
+
+  </div>

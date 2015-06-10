@@ -1,0 +1,24 @@
+﻿<div id="monitorBanner" ng-controller="monitorBannerController">
+    <header>
+        <div>
+            <img src="../Images/dell_logo_white_96px.png" />
+            <a id="monitorAppTitle" href="#">Monitor Lab</a>
+        </div>
+        <nav>
+            <span id="monitorBannerLeftLinks" ng-controller="siteMapController" >
+                <cui-breadcrumb items='items'></cui-breadcrumb>
+            </span>
+            <ul id="monitorBannerRightLinks">
+                <li>
+                    <a id="bannerAboutLink" href=""  ng-click="monitorAbout()">
+                        <cui-icon icon="info-sign"></cui-icon><span class="linkText">About</span></a>
+                </li>
+                <li>
+                    <a id="bannerHelpLink" href="#" target="_blank" ng-click="monitorHelp()">
+                        <cui-icon icon="lightbulb"></cui-icon><span class="linkText">Help</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>

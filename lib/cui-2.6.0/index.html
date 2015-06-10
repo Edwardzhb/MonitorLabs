@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+  <title>Application Title</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <script src='./js/cui-vendor.min.js'></script>
+  <script src='./js/cui.min.js'></script>
+
+  <link rel="stylesheet" href="./css/cui.min.css">
+</head>
+<body ng-controller='AppController'>
+
+<cui-application-frame application-name='Sitraka' navigation-items='applicationframe.navigation' masthead-show-controls=true>
+
+  <div cui-controls>
+  <!-- cui-controls contains any items that should appear in the application frame heading bar-->
+  </div>
+
+  <div cui-content>
+  <!-- cui-content contains any content that should appear in the main part of the application-->
+  </div>
+
+</cui-application-frame>
+
+<script>
+  angular.module('myApp', ['cui']).
+  controller('AppController', function($scope) {
+
+    var applicationframe = {
+      navigation: [
+        {
+          label: 'Home',
+          icon: 'home'
+        }
+      ]
+    }
+
+    $scope.applicationframe = applicationframe;
+  });
+</script>
+</body>
+</html>

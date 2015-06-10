@@ -1,0 +1,210 @@
+body{
+  font-size: 13px;
+}
+
+#monitorBanner header > div:first-child {
+  padding: 5px 5px 0px 5px;
+  border-bottom: 1px solid #4c759a;
+  background-color: #5482ab;
+  white-space: nowrap;
+}
+#monitorBanner header > div:first-child a {
+  color: white;
+}
+#monitorBanner header > div:first-child a:hover,
+#monitorBanner header > div:first-child a:focus {
+  text-decoration: none;
+}
+#monitorBanner header > div:first-child a#ChartAppTitle {
+  font-size: 29px;
+  position: relative;
+  top: 8px;
+}
+#monitorBanner header > div:first-child img {
+  margin: 10px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+  width: 51px;
+  height: 40px;
+}
+#monitorBanner header > nav {
+  box-sizing: border-box;
+  height: 38px;
+  padding: 10px 10px 10px 15px;
+  color: white;
+  border-top: 1px solid #649ccd;
+  background-color: #5482ab;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1YzhmYmMiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU0ODJhYiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(top, #5c8fbc, #5482ab);
+  background-image: -moz-linear-gradient(top, #5c8fbc, #5482ab);
+  background-image: -o-linear-gradient(top, #5c8fbc, #5482ab);
+  background-image: linear-gradient(to bottom, #5c8fbc, #5482ab);
+}
+#monitorBanner header > nav a {
+  color: white;
+}
+#monitorBanner header > nav a:hover,
+#monitorBanner header > nav a:focus {
+  text-decoration: none;
+}
+#monitorBanner header > nav span {
+  color: white;
+}
+#monitorBanner header > nav ul {
+  list-style-type: none;
+  float: right;
+}
+#monitorBanner header > nav ul li {
+  float: left;
+  margin-left: 20px;
+}
+#monitorBanner header > div:first-child a#monitorAppTitle {
+  font-size: 29px;
+  position: relative;
+  top: 8px;
+}
+
+#monitorBanner header > nav ul li span.glyphicon {
+  color: white;
+  width: 18px;
+}
+
+#monitorBannerLeftLinks  {
+  float: left;
+  font-size: 15px;
+}
+
+#monitorBanner header > nav span ul li {
+  margin-left: 0px;
+}
+
+#container{
+  padding-top: 20px;
+}
+
+#container .containerLeft
+{
+  float: left;
+}
+
+#container .containerRight
+{
+  float: left;
+  width: auto;
+}
+
+.labs-navigation a:hover,
+.labs-navigation a:focus{
+  text-decoration: none;
+
+}
+
+.labs-navigation ul{
+   list-style-type: none;
+  box-sizing: border-box;
+  padding-left: 0px;
+  font-size: 18px;
+  color: #999;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.labs-info {
+  background: #eee;
+  color: #999;
+  border-color: #ce1126;
+ margin-top: 10px;
+}
+
+.bootstrap ul{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.linkText{
+  padding-left: 5px;
+}
+
+.linkTextColor{
+  color: #FFF;
+}
+
+.dropdown-toggle, div, p, span, sub, sup
+{
+  position: static;;
+}
+
+h2, h3, h4, h5, h6{
+  font-weight: 100;
+}
+
+.cui-product-info{
+  font-size: 13px;
+}
+.iconColor{
+  color: #555 !important;
+}
+
+h1{
+  padding-bottom: 18px;
+  padding-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+h5{
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  position:relative !important;
+  padding-left:20px !important;
+}
+
+.width90{
+  width:90%;
+}
+
+.width100{
+  width:100%;
+}
+
+.padding0{
+  padding: 0px !important;
+}
+
+.labDetails{
+  left:90% !important;
+  top: 35% !important;
+  font-size: 30px !important;
+}
+
+.right0{
+  right:90% !important;
+}
+.cui-modal.cui-modal-type-confirm
+{
+  background-color:#2E8BCC !important;
+}
+.text-default{
+  font-size: 15px;
+}
+
+.vmDivBusy{
+  background-color:#FF66A3
+}
+.vmDivAvailable{
+ /* background-color:#94FF94;*/
+  background-color: rgb(27, 161, 226)
+}
+.vmDivException{
+  /*background-color:#FFFF80*/
+  background-color:#FFF555
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
