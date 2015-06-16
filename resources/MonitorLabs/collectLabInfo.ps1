@@ -126,8 +126,8 @@ echo $remoteInfoJson
 
 #send data to server
 $URI = "http://10.30.168.239:3000/saveLabsInfo"
-$wpassword = "Dell8866"
-$wusername = "hzhou2"
+$wpassword = "Quest123"
+$wusername = "administrator"
 $password = ConvertTo-SecureString $wpassword -AsPlainText -Force
 $credential = New-Object System.Management.Automation.PSCredential ($wusername, $password)
 

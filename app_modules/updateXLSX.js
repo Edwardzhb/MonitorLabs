@@ -2,12 +2,12 @@
 
 if(typeof require !== 'undefined') 
 	var XLSX = require('xlsx');
-var workbook = XLSX.readFile('../resources/sample.xlsx');
+var workbook = XLSX.readFile('../resources/computerNameMapping.xlsx');
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : '12357'
+  password : 'Dell8866'
 });
 connection.connect();
 connection.query('use labsInfo;');

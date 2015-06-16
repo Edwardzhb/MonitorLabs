@@ -11,7 +11,7 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : '12357'
+  password : 'Dell8866'
 });
 connection.connect();
 connection.query('use labsInfo;');
@@ -20,13 +20,11 @@ connection.query('create table IF NOT EXISTS vmsInfo(ID int(11),SessionID int(3)
 		create_time datetime);',function(err,rows){
 	if(err) throw err;
 });
-connection.end();
 
 exports.getVMSByDomainName = function(res,data){
 	console.log(data);
 	var jsData = JSON.parse(data);
 	console.log(jsData['domainName']);
-	connection.connect();
 	connection.query('use labsInfo;');
 	var time1 = new Date().getTime();
 	connection.query('select ComputerName,ClientName,State,DomainName from vmsInfo a where a.domainName=? and create_time = (\
@@ -42,7 +40,6 @@ exports.getVMSByDomainName = function(res,data){
 			res.end(JSON.stringify(results));
 		})	
 	});
-	connection.end();
 }
 
 var addHistoryUsersToVMS = function(vms,callback){
@@ -69,28 +66,26 @@ var addHistoryUsersToVMS = function(vms,callback){
 }
 
 exports.getDomainName = function(res){
-	connection.connect();
 	connection.query('use labsInfo;');
 	connection.query('select distinct domainName from vmsInfo;',function(err,rows,fields){
 		var retStr = JSON.stringify(rows);
 		//console.log(retStr);
 		res.end(retStr);
 	});
-	connection.end();
 };
 
 exports.saveLabsInfo = function(data){
 	//console.log(data);
 	var jsonObj = JSON.parse(data);
 	//console.log(jsonObj);
-	connection.connect();
 	connection.query('use labsInfo;');
-	//var time4 = new Date().getTime();
+	
 	connection.query('select * from userNameMapping',function(err,rows,fields){//first select all then find username;
 		var userNameMapping = {};
 		for(var i=0;i<rows.length;i++){
 			userNameMapping[rows[i].QuestPropertyNO] = String(rows[i].Owner)
 		}
+		var time4 = new Date().getTime();
 		for(var i=0;i < jsonObj.length;i++){
 		  //console.log(jsonObj[i].ComputerName);
 		  connection.query('insert into vmsInfo(SessionID,ComputerName,DomainName,excepMes,State,ClientName,WindowStationName,UserAccount,\
@@ -98,11 +93,12 @@ exports.saveLabsInfo = function(data){
 		  jsonObj[i].excepMes,jsonObj[i].State,userNameMapping[jsonObj[i].ClientName],jsonObj[i].WindowStationName,jsonObj[i].UserAccount,jsonObj[i].IPAddress,jsonObj[i].LastInputTime,
 		  jsonObj[i].LoginTime],function(err,rows,fields){
 			 if(err) throw err;
+			 var time5 = new Date().getTime();
+			 console.log("save time is " + (time5 - time4));
 				//console.log(rows);
 		  });		  
 		}
 	});
-	connection.end();	
 }
 
 var timeConvertToAgoFormat = function(rows){
